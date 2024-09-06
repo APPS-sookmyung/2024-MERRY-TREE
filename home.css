@@ -1,0 +1,19 @@
+.title {  
+    text-align: center;
+    padding: 350px;
+    color: #628148;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.buttonCenter {
+    text-align: center;
+}
+
+.buttonCenter .startButton {
+    color: #972d2d;
+    background-color: #628148;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

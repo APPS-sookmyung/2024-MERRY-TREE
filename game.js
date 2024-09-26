@@ -59,6 +59,7 @@ let firstCardBack;
 let secondCardBack;
 let firstCardFront;
 let secondCardFront;
+let acquiredOrnaments = [];
 
 cardArray.forEach((element, index) => {
 if (index < cardBacks.length) {
@@ -92,7 +93,7 @@ const cardClick = (index) => {
         const card2 = clickedCard[1].id;
         cardFrontInFalse = [];
         clickedCard = [];
-        //console.log('카드가 두 장 클릭됐습니다');
+        console.log('카드가 두 장 클릭됐습니다');
         //console.log(`${card1}, ${card2}`);
     
         if ((card1 === 'ball1' && card2 === 'ball2') || (card1 === 'ball2' && card2 === 'ball1') ||
@@ -103,18 +104,23 @@ const cardClick = (index) => {
             (card1 === 'star1' && card2 === 'star2') || (card1 === 'star2' && card2 === 'star1')) {
             // clickedCard = [];
             // cardFrontInFalse = [];
-            //console.log("같은 카드입니다");
+            console.log("같은 카드입니다");
             col.onclick = null;
+            acquiredOrnaments.push(firstCardBack.querySelector('img').src);
+            console.log(acquiredOrnaments);
+            //console.log(`${clickedCard[0].src}`);
+            // const acquiredOrnament = firstCardBack.querySelector('img').src;
+            // localStorage.setItem('acquiredOrnament', acquiredOrnament);
         } else {
             // clickedCard = [];
             // cardFrontInFalse = [];
-            //console.log("다른 카드입니다.");
-                setTimeout(() => {
-                    firstCardBack.style.display = 'none';
-                    secondCardBack.style.display = 'none';
-                    firstCardFront.style.display = 'block';
-                    secondCardFront.style.display = 'block';
-                }, 500);
+            console.log("다른 카드입니다.");
+            setTimeout(() => {
+                firstCardBack.style.display = 'none';
+                secondCardBack.style.display = 'none';
+                firstCardFront.style.display = 'block';
+                secondCardFront.style.display = 'block';
+            }, 500);
         }
     }
 }
@@ -122,3 +128,8 @@ const cardClick = (index) => {
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
 }
+
+setTimeout(() => {
+    localStorage.setItem('acquiredOrnaments', JSON.stringify(acquiredOrnaments));
+    window.location.href = "ornament.html";
+}, 10000);

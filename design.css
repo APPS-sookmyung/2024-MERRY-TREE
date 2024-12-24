@@ -1,0 +1,256 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 45%;
+}
+
+.depository {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 45%;
+}
+
+.tree .image img {
+  height: 650px;
+  width: 500px;
+}
+
+.tree img {
+  height: 180px;
+  width: 150px;
+}
+
+.depository img {
+  width: 700px;
+  height: 800px;
+  top: 20px;
+  right: 20px;
+  display: block;
+}
+
+.ornaments {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.ornaments img {
+  height: 180px;
+  width: 150px;
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons button {
+  color: #972d2d;
+  background-color: #628148;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.textarea-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+textarea {
+  width: 200px;
+  height: 100px;
+  resize: none;
+  background-color: transparent;
+  color: rgb(234, 214, 214);
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  gap: 2vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 45%;
+}
+
+.depository {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 45%;
+}
+
+.tree .image img {
+  height: 80vh;
+  width: 35vw;
+}
+
+.tree img {
+  height: 18vh;
+  width: 9vw;
+}
+
+.depository img {
+  width: 40vw;
+  height: 90vh;
+  top: 2vh;
+  right: 2vw;
+  display: block;
+}
+
+.ornaments {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+}
+
+.ornaments img {
+  height: 18vh;
+  width: 9vw;
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.buttons button {
+  color: #972d2d;
+  background-color: #628148;
+  padding: 1vh 2vw;
+  font-size: 1.5vh;
+  font-weight: bold;
+}
+
+.textarea-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+textarea {
+  width: 35vw;
+  height: 40vh;
+  resize: none;
+  background-color: transparent;
+  color: rgb(234, 214, 214);
+  font-size: 1.5rem;
+}
+
+.captureButtonContainer {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.depository .captureButton {
+  color: #972d2d;
+  background-color: #628148;
+  padding: 1vh 2vw;
+  font-size: 1.5vh;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .tree .image img {
+    height: 50vh;
+    width: 45vw;
+  }
+
+  .depository .image img {
+    height: 45vh;
+    width: 60vw;
+  }
+
+  .tree img {
+    height: 15vh;
+    width: 10vw;
+  }
+
+  .ornaments img {
+    height: 15vh;
+    width: 10vw;
+    cursor: grab;
+    transition: transform 0.3s ease;
+  }
+
+  .tree,
+  .depository {
+    width: 90%;
+    height: 95%;
+  }
+
+  textarea {
+    font-size: 1rem;
+  }
+}

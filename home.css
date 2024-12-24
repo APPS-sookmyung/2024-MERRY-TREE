@@ -1,19 +1,58 @@
-.title {  
-    text-align: center;
-    padding: 350px;
-    color: #628148;
-    font-size: 70px;
-    font-weight: bold;
+/* .container {
+  text-align: center;
+  padding: 300px;
+}
+
+.explain {
+  color: rgb(234, 214, 214);
+  font-size: 20px;
+}
+
+.title {
+  color: #628148;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 .buttonCenter {
-    text-align: center;
+  text-align: center;
+  top: 100px;
 }
 
 .buttonCenter .startButton {
-    color: #972d2d;
-    background-color: #628148;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: bold;
+  color: #972d2d;
+  background-color: #628148;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+} */
+
+.container {
+  text-align: center;
+  padding: clamp(0px, 15vw, 300px);
+}
+
+.explain {
+  color: rgb(234, 214, 214);
+  font-size: clamp(0px, 4vw, 20px);
+}
+
+.title {
+  color: #628148;
+  font-size: clamp(0px, 8vw, 70px);
+  font-weight: bold;
+}
+
+.buttonCenter {
+  text-align: center;
+  position: relative;
+  top: 10vh;
+}
+
+.buttonCenter .startButton {
+  color: #972d2d;
+  background-color: #628148;
+  padding: clamp(0px, 2vw, 10px) clamp(0px, 4vw, 20px);
+  font-size: clamp(0px, 4vw, 20px);
+  font-weight: bold;
 }

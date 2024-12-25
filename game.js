@@ -51,7 +51,6 @@ const cardArray = [
 
 const NewCardArray = shuffle(cardArray);
 
-//const cardFronts = document.querySelectorAll(".cardFront");
 const cardBacks = document.querySelectorAll(".cardBack");
 
 let clickedCard = [];
@@ -72,21 +71,6 @@ cardArray.forEach((element, index) => {
     cardBacks[index].appendChild(img);
   }
 });
-
-// const synchCardSize = () => {
-//   cardFronts.forEach((cardFront, index) => {
-//     const cardBack = cardBacks[index];
-
-//     const frontWidth = cardFront.offsetWidth;
-//     const frontHeight = cardFront.offsetHeight;
-
-//     cardBack.style.width = `${frontWidth}px`;
-//     cardBack.style.height = `${frontHeight}px`;
-//   });
-// };
-
-// synchCardSize();
-// window.addEventListener("resize", synchCardSize);
 
 const cardClick = (index) => {
   if (isProcessing) return;
@@ -150,7 +134,7 @@ const cardClick = (index) => {
   }
 };
 
-let countdown = 13;
+let countdown = 12;
 const timer = document.querySelector(".time");
 
 const countdownInterval = setInterval(() => {

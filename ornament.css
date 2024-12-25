@@ -1,6 +1,6 @@
 img {
-  height: auto;
-  width: 20vw;
+  height: 17vh;
+  width: 8vw;
   max-width: 160px;
   max-height: 220px;
 }
@@ -15,19 +15,51 @@ img {
 .ornaments {
   display: flex;
   justify-content: center;
-  gap: 10vw;
+  gap: 3vw;
   flex-wrap: wrap;
 }
 
 .button {
+  display: flex;
+  position: absolute;
+  bottom: 15vh;
+  left: 50%;
+  transform: translate(-50%);
+  flex-direction: row;
   text-align: center;
-  padding: clamp(0px, 10vh, 150px);
+  gap: 10vw;
 }
 
-.treeDesignButton {
-  color: #628148;
+.treeDesignButton,
+.retryButton {
   background-color: #972d2d;
-  padding: clamp(0px, 5vw, 10px) clamp(0px, 10vw, 20px);
-  font-size: clamp(16px, 2vw, 20px);
+  color: #628148;
+  padding: 1vh 2vw;
+  font-size: 1.7vh;
   font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    height: 9vh;
+    width: 11vw;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  }
+
+  .treeDesignButton,
+  .retryButton {
+    background-color: #972d2d;
+    color: #628148;
+    padding: 1vh 2vw;
+    font-size: 1.5vh;
+    font-weight: bold;
+  }
 }

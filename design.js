@@ -74,21 +74,6 @@ document.getElementById("againButton").addEventListener("click", () => {
   location.reload();
 });
 
-// document.getElementById("messageButton").addEventListener("click", () => {
-//   const message = prompt("메세지를 입력하세요:");
-//   if (message) {
-//     const depositoryOrnament = document.querySelector(".depository .ornaments");
-//     const messageDiv = document.createElement("div");
-//     messageDiv.textContent = message;
-//     messageDiv.style.textAlign = "center";
-//     messageDiv.style.marginTop = "20px";
-//     messageDiv.style.width = "80%";
-//     messageDiv.style.color = "rgb(234, 214, 214)";
-//     messageDiv.style.fontSize = "25px";
-//     depositoryOrnament.appendChild(messageDiv);
-//   }
-// });
-
 document.getElementById("messageButton").addEventListener("click", () => {
   const depository = document.querySelector(".depository");
 
@@ -117,6 +102,7 @@ captureButton.addEventListener("click", () => {
   });
 
   captureButton.style.display = "none";
-});
 
-//내일: 이미지 그리고 다시 캡처, design textarea 추가, design 페이지 반응형, git 확인하기, 배포 확인하기, 썸네일 만들기, 영상 찍기, 폼 작성하기
+  const explain = document.querySelector(".explain");
+  explain.style.display = "none";
+});

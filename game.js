@@ -134,7 +134,7 @@ const cardClick = (index) => {
   }
 };
 
-let countdown = 12;
+let countdown = 15;
 const timer = document.querySelector(".time");
 
 const countdownInterval = setInterval(() => {
@@ -154,4 +154,4 @@ function shuffle(array) {
 setTimeout(() => {
   localStorage.setItem("acquiredOrnaments", JSON.stringify(acquiredOrnaments));
   window.location.href = "ornament.html";
-}, 13000);
+}, 16000);

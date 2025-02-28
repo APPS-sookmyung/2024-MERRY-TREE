@@ -30,14 +30,33 @@ img {
   gap: 10vw;
 }
 
-.treeDesignButton,
-.retryButton {
-  background-color: #972d2d;
-  color: #628148;
+.homeButton {
+  background-color: rgb(242, 201, 201);
+  color: #972d2d;
   padding: 1vh 2vw;
   font-size: 1.7vh;
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 2vh;
+  left: 50%;
+  transform: translate(-50%);
+  flex-direction: row;
+  text-align: center;
+  gap: 10vw;
+  border-color: rgb(242, 201, 201);
+}
+
+.treeDesignButton,
+.retryButton {
+  background-color: #628148;
+  color: #972d2d;
+  padding: 1vh 2vw;
+  font-size: 1.7vh;
+  font-weight: bold;
+  cursor: pointer;
+  border-color: #628148;
 }
 
 @media screen and (max-width: 768px) {

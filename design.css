@@ -7,6 +7,24 @@ body {
   flex-wrap: wrap;
 }
 
+.homeButton {
+  background-color: rgb(242, 201, 201);
+  color: #972d2d;
+  padding: 1vh 2vw;
+  font-size: 1.7vh;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 2vh;
+  left: 50%;
+  transform: translate(-50%);
+  flex-direction: row;
+  text-align: center;
+  gap: 10vw;
+  border-color: rgb(242, 201, 201);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -97,6 +115,7 @@ body {
   font-size: 1.7vh;
   font-weight: bold;
   cursor: pointer;
+  border-color: #628148;
 }
 
 .textarea-wrapper {
@@ -130,9 +149,14 @@ textarea {
   font-size: 1.7vh;
   font-weight: bold;
   cursor: pointer;
+  border-color: #628148;
 }
 
 @media screen and (max-width: 768px) {
+  .homeButton {
+    display: none;
+  }
+
   .container {
     flex-direction: column;
     gap: 5vh;
@@ -167,6 +191,8 @@ textarea {
   }
 
   textarea {
+    height: 30vh;
+    width: 30vw;
     font-size: 1rem;
   }
 

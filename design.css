@@ -153,6 +153,10 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+  .homeButton {
+    display: none;
+  }
+
   .container {
     flex-direction: column;
     gap: 5vh;
@@ -187,6 +191,8 @@ textarea {
   }
 
   textarea {
+    height: 30vh;
+    width: 30vw;
     font-size: 1rem;
   }
 
